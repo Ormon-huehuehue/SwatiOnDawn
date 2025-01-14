@@ -1,4 +1,35 @@
-<div class = "flex page-width text-center">
-    <h1 class = 'px-5 bg-blue-900 w-[100px]'>Hello</h1>
-    <h1 class = 'px-5 bg-red-400'>Hello</h1>
+<div class="relative overflow-hidden whitespace-nowrap h-16 flex items-center my-10">
+    <div class="flex space-x-10 animate-marquee w-max">
+        <h1 class="px-5 bg-blue-300 rounded-xl">Hello</h1>
+        <h1 class="px-5 bg-red-400 rounded-xl">World</h1>
+        <h1 class="px-5 bg-green-400 rounded-xl">Tailwind</h1>
+        <h1 class="px-5 bg-yellow-400 rounded-xl">CSS</h1>
+    </div>
 </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 79">
+    <defs>
+      <clipPath id="line_separator_template--17864184758503__line_separator_PytqgQ">
+        <rect width="1440" height="79" fill="none"></rect>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#line_separator_template--17864184758503__line_separator_PytqgQ)">
+      
+        <path d="M-18.5,6h1043.5c26.5.67,84.5,4.5,104.5,14.5,25,12.5,13,71.5-24.5,48s56-62.5,84.5-62.5h293.5" fill="none" stroke="#7dc8c2" stroke-dasharray="9 9" stroke-linecap="round" stroke-width="5"></path>
+      
+    </g>
+</svg>
+
+
+
+
+<style>
+@keyframes marquee {
+  from { transform: translateX(100vw); }
+  to { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
+</style>
