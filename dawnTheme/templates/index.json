@@ -20,11 +20,11 @@
       "settings":{   
       }
     },
-    "featured_collection": {
+    "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
+        "title": "Our Bestsellers ✨",
+        "heading_size": "h0",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -47,11 +47,63 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+   "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "blue-lenses"
+          }
+        },
+        "featured_collection2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brown-lenses"
+          }
+        },
+        "featured_collection3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "green-lenses"
+          }
+        },
+        "featured_collection4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "grey-lenses"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection1",
+        "featured_collection2",
+        "featured_collection3",
+        "featured_collection4"
+      ],
+      "settings": {
+        "title": "Shop our top categories",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 48,
+        "padding_bottom": 60
+      }
+    },
+    "results" : {
+      "type": "results"
     }
   },
   "order": [
     "image_banner",
     "infinite-scroll",
-    "featured_collection"
+    "featured-collection",
+    "collection-list",
+    "results"
   ]
 }
