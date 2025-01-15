@@ -4,9 +4,32 @@
 
 
 <div class= "w-screen">
-    <div class="w-full h-[500px] bg-gradient-to-b from-[#ded6e3] to-white">
+    <div class="w-full h-[500px]" style="background: linear-gradient(to bottom, {{ section.settings.color1 }} 0%, {{section.settings.color2}} 100%);">
         <p> Hello</p>
     </div>
 
 </div>
 
+
+
+{%  schema  %} 
+{
+    "name" : "Results",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+            "type": "color",
+            "id" : "color1",
+            "default" : "#ded6e3",
+            "label" : "color 1"
+        },
+        {
+            "type": "color",
+            "id" : "color2",
+            "default" : "white",
+            "label" : "color 1"
+        }
+    ]
+}
+ {% endschema %}
