@@ -5,7 +5,12 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
-<nav class="header__inline-menu">
+{% assign logo_url = "https://in.swati.com/cdn/shop/files/SWATI_logo_black.png?v=1698775455&width=180" %}
+
+<nav class=" flex ">
+  <span class="h2 px-10 flex items-center">
+    <img src = {{logo_url}} width=180/>
+  </span>
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
