@@ -66,11 +66,13 @@
     id="collection-{{ section.id }}"
     data-id="{{ section.id }}"
   >
-    <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+    <div class=" flex w-full">
       {%- if section.settings.title != blank -%}
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-          {{ section.settings.title }}
-        </h2>
+        <div class="w-full flex justify-center pb-20 {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          <p class ="flex  text-center text-darkPurple font-bold font-fraunces">
+            {{section.settings.title}}
+          </p>
+        </div>
       {%- endif -%}
       {%- if section.settings.description != blank
         or section.settings.show_description
@@ -237,7 +239,7 @@
           "label": "t:sections.all.heading_size.options__5.label"
         }
       ],
-      "default": "h1",
+      "default": "h0",
       "label": "t:sections.all.heading_size.label"
     },
     {
@@ -482,7 +484,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 36
+      "default": 0
     },
     {
       "type": "range",

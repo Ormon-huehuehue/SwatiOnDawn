@@ -10,8 +10,13 @@ module.exports = {
         beigish : "#fffff6",
         grayText : "#8f8f8f",
         oceanBlue : "#cbe9e7",
-        textPurple : "#3f378b"
-      }
+        textPurple : "#3f378b",
+        darkPurple : "#2a2553"
+
+      },
+      fontFamily: {
+        fraunces: ["Fraunces", 'sans-serif'], 
+      },
     },
   },
   plugins: [],
