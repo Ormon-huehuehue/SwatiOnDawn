@@ -4,8 +4,49 @@
 
 
 <div class= "w-screen">
-    <div class="w-full h-[500px]" style="background: linear-gradient(to bottom, {{ section.settings.color1 }} 0%, {{section.settings.color2}} 100%);">
-        <p> Hello</p>
+    <div class="w-full h-auto" style="background: linear-gradient(to bottom, {{ section.settings.color1 }} 0%, {{section.settings.color2}} 100%);">
+        <div class = 'flex flex-col justify-center items-center text-center'>
+            <p class = "font-fraunces text-[50px] font-bold text-textPurple"> {{section.settings.header_text}}</p>
+            <p class = 'font-handlee text-2xl md:text-3rem text-textPurple'>{{section.settings.subheading}}</p>
+
+            <videosection class= 'flex '>
+            </videosection>
+
+            <celebSecret class = 'flex my-20 w-full px-10 border-2 border-black relative flex-grow'>
+                <div class ="flex relative " >
+                    <img class="rounded-[50px] flex items-center justify-cetner z-0 w-[350px] md:w-[500px] lg:w-[750px]" src="https://in.swati.com/cdn/shop/files/Celebs_1000x855E.jpg?v=1728035472&width=750">
+                </div>
+                <div class=" flex flex-col max-w-[350px] lg:max-w-[500px] bg-oceanbg absolute text-start z-5 rounded-[40px] px-20 py-5 gap-10 h-auto">
+                        <p class= 'font-fraunces text-darkPurple text-[30px] font-bold'> Celebrity secret revealed!</p>
+                        <p class="text-[1.6rem] font-weight-medium"> Discover how celebrities are transforming their look with colored contact lenses!</p>
+                        <ul class="flex flex-col gap-10 h-auto">
+                            <li class="flex text-start h-auto">
+                                <div class="bg-darkPurple flex text-white text-center font-bold justify-center items-center px-2 py-2  rounded-full w-[28px] h-[28px] text-md" >
+                                    1
+                                </div>
+                                <div class="flex">
+                                    See how 14 celebrities elevate their style with bold eye colors. 
+                                </div>
+                            </li>
+                            <li class="flex text-start">
+                                <div class="bg-darkPurple mx-5 flex text-white text-center font-bold justify-center items-center  rounded-full w-[28px] h-[28px] text-md" >
+                                    2
+                                </div>
+                                <div class="flex">
+                                    Get inspired to try the latest trends with our lenses. . 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                {% comment %} <picture class="w-full">
+                    <source
+                        srcset = 'https://in.swati.com/cdn/shop/files/Celebs_1000x855E.jpg?v=1728035472&width=750 750w'
+                        sizes="100vw"
+                    >
+                </picture> {% endcomment %}
+            </celebSecret>
+        </div>
+        
     </div>
 
 </div>
@@ -27,9 +68,27 @@
         {
             "type": "color",
             "id" : "color2",
-            "default" : "white",
-            "label" : "color 1"
+            "default" : "#f2f2f2",
+            "label" : "color 2"
+        },
+        {
+            "type":"text",
+            "id" : "header_text",
+            "default" : "Real People. Real Results.",
+            "label": "Heading"
+        },
+        {
+            "type" : "text",
+            "id": "subheading",
+            "default" : "100 000+ Happy Customers",
+            "label" : "subheading"
+        },
+        {
+            "type" : "image_picker",
+            "id" : "celeb_image",
+            "label" : "celeb section image"
         }
+
     ]
 }
  {% endschema %}
