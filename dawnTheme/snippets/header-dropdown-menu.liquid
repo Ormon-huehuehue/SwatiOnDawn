@@ -7,11 +7,12 @@
 
 {% assign logo_url = "https://in.swati.com/cdn/shop/files/SWATI_logo_black.png?v=1698775455&width=180" %}
 
-<nav class=" flex ">
-  <span class="h2 px-10 flex items-center">
+<nav class=" flex justify-center lg:justify-start relative">
+  
+  <span class="h2 px-10 flex items-center justify-center relative left-5">
     <img src = {{logo_url}} width=180/>
   </span>
-  <ul class="list-menu list-menu--inline" role="list">
+  <ul class="p-0 m-0 [display:none] lg:flex flex-wrap" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
         {%- if link.links != blank -%}

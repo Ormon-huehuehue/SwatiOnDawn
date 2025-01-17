@@ -610,6 +610,10 @@ video {
   left: 0px;
 }
 
+.left-5{
+  left: 1.25rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -622,6 +626,10 @@ video {
   z-index: 10;
 }
 
+.m-0{
+  margin: 0px;
+}
+
 .my-20{
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -630,6 +638,16 @@ video {
 .mx-10{
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .mb-\[95px\]{
@@ -684,12 +702,28 @@ video {
   margin-top: 0.5rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mr-\[44px\]{
+  margin-right: 44px;
+}
+
+.mr-\[-44px\]{
+  margin-right: -44px;
+}
+
 .block{
   display: block;
 }
 
 .flex{
   display: flex;
+}
+
+.inline-flex{
+  display: inline-flex;
 }
 
 .table{
@@ -726,6 +760,10 @@ video {
 
 .h-\[150vw\]{
   height: 150vw;
+}
+
+.h-\[100px\]{
+  height: 100px;
 }
 
 .max-h-\[1000px\]{
@@ -793,8 +831,16 @@ video {
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
 .justify-center{
   justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
 }
 
 .gap-10{
@@ -857,6 +903,10 @@ video {
   border-radius: 6vw;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
 .border-2{
   border-width: 2px;
 }
@@ -879,6 +929,11 @@ video {
 .bg-oceanbg{
   --tw-bg-opacity: 1;
   background-color: rgb(229 244 243 / var(--tw-bg-opacity, 1));
+}
+
+.bg-textPurple{
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 55 139 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover{
@@ -933,6 +988,11 @@ video {
 .py-\[6vw\]{
   padding-top: 6vw;
   padding-bottom: 6vw;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .text-center{
@@ -994,6 +1054,16 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1037,6 +1107,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.opacity-0{
+  opacity: 0;
+}
+
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1049,6 +1123,60 @@ video {
 
 .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.\[display\:none\]{
+  display: none;
+}
+
+.hover\:px-14:hover{
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.hover\:py-10:hover{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.hover\:py-8:hover{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hover\:px-11:hover{
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
+.hover\:py-6:hover{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.hover\:px-\[22px\]:hover{
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.hover\:px-\[42px\]:hover{
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.hover\:px-\[2\.6rem\]:hover{
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+}
+
+.hover\:py-\[1\.28rem\]:hover{
+  padding-top: 1.28rem;
+  padding-bottom: 1.28rem;
+}
+
+.hover\:py-\[1\.3rem\]:hover{
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
 }
 
 @media (min-width: 640px){
@@ -1097,6 +1225,10 @@ video {
 
   .md\:flex{
     display: flex;
+  }
+
+  .md\:inline-flex{
+    display: inline-flex;
   }
 
   .md\:hidden{
@@ -1159,6 +1291,10 @@ video {
     width: 60vw;
   }
 
+  .md\:justify-start{
+    justify-content: flex-start;
+  }
+
   .md\:gap-10{
     gap: 2.5rem;
   }
@@ -1217,15 +1353,39 @@ video {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .md\:text-\[50px\]{
+    font-size: 50px;
+  }
 }
 
 @media (min-width: 1024px){
+  .lg\:visible{
+    visibility: visible;
+  }
+
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:inline-flex{
+    display: inline-flex;
+  }
+
   .lg\:h-\[1000px\]{
     height: 1000px;
   }
 
   .lg\:max-h-\[1000px\]{
     max-height: 1000px;
+  }
+
+  .lg\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .lg\:opacity-100{
+    opacity: 1;
   }
 }
 
